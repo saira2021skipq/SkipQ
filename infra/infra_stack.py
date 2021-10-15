@@ -11,30 +11,43 @@ from aws_cdk import aws_lambda as lambda_
 from aws_cdk import aws_events,aws_events_targets
 
 
+
 class InfraStack(cdk.Stack):
 
     def __init__(self, scope: cdk.Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
+        
         hello_lamnda=self.create_lambda("helloLambda","./lambda","handler.lambda_handler")
-        web_lamnda=self.web_health_lambda("WebhealthLambda","./lambda","web_health_publisher.health_web")
+        
+        web_lamnda=self.create_lambda("WebhealthLambda","./lambda","web_health_publisher.health_web")
+        
         
         lambda_schedule=aws_events.Schedule.rate(core.Duration.minutes(5))
         event_target=aws_events_targets.LambdaFunction(handler=web_lamnda)
+        
         lambda_run_rule=aws_events.Rule(self,"web_health_schedule_rule",
         description="Periodic Web Health Check",
         schedule=lambda_schedule,
         targets=[event_target]
         )
         
-    def web_health_lambda(self,id,asset,handler):
-        return lambda_.Function(self,id,
-        code=lambda_.Code.asset(asset),
-        handler=handler,
-        runtime=lambda_.Runtime.PYTHON_3_6
-        )
         
-        
+    
     def create_lambda(self,id,asset,handler):
+        
+        '''
+        --Description: Create a lambda function
+    
+        --Parameters:
+        self: this object.
+        id: specific for each object
+        asset: The Function method uses assets to bundle the contents of the directory and use it for the function's code.
+        handler: handler is the method in your function code that processes events.
+        
+        --Returns:
+        lambda function  
+        '''
+    
         return lambda_.Function(self,id,
         code=lambda_.Code.asset(asset),
         handler=handler,
