@@ -3,7 +3,7 @@
 
 This project implements a lambda function which runs periodically to check website latency and availability.
 set up cdk 
-
+This site was built using [GitHub Pages](https://pages.github.com/)
 Set up virtual environment
 
 ```
