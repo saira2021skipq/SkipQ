@@ -15,7 +15,7 @@ The AWS CDK, an open source software development framework to define cloud infra
 
 As an extensible, open software development framework, the AWS CDK features integrated development environment (IDE) capabilities. As of publication, the AWS CDK supports TypeScript, JavaScript, Python, Java and C#/.Net. In this article, we'll compare the AWS CDK vs. CloudFormation, including their key features, the role of constructs in building application stacks and the benefits of using a common language for AWS-native infrastructure as code.
 
-## Project Functional Requirements [![Generic badge](https://img.shields.io/badge/<Implemented>-<Yes>-<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda)
+## Project Functional Requirements [![Generic badge](https://img.shields.io/badge/Implemented-Yes-<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda)
 * Project must be implemented on Cloud 9
 * Project must be implemented in python
 * Cloud infrastructure must be created programmatically
@@ -23,7 +23,7 @@ As an extensible, open software development framework, the AWS CDK features inte
 * Lambda function must return status of url passed
 * Lambda function must run every 5 minute to monitor website
 
-## Project Non Functional Requirements
+## Project Non Functional Requirements [![Generic badge](https://img.shields.io/badge/Implemented-Yes-<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda)
 * Comments must be add in the code
 * Code must be structured well
 * Modular approach should be used
@@ -38,7 +38,7 @@ As an extensible, open software development framework, the AWS CDK features inte
 * aws lambda
 
 ## End results
-### Response
+### Response [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda)
 ![Response_Result](images/Response.png?raw=true "Title")
 ### Lambda Monitering 
 ![Moniter_Result](images/Moniter.png?raw=true "Title")
