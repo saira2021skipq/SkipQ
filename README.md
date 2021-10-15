@@ -40,3 +40,8 @@ As an extensible, open software development framework, the AWS CDK features inte
 ![Response_Result](images/Response.png?raw=true "Title")
 ### Lambda Monitering 
 ![Moniter_Result](images/Moniter.png?raw=true "Title")
+
+##To run 
+create a virtual environment 
+> pip install .source/venc/activate
+
