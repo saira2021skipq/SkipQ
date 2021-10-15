@@ -32,19 +32,19 @@ As an extensible, open software development framework, the AWS CDK features inte
 
 
 ## Technologies Used
-* python [![Generic badge](https://img.shields.io/badge/Python.org--<COLOR>.svg)](hhttps://www.python.org/)
+* python [![Generic badge](https://img.shields.io/badge/Python.org--<COLOR>.svg)](https://www.python.org/)
 * aws cloud9 
 * aws_cdk 
 * aws lambda
 
 ## End results
-### Response [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
+### Response   [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
 ![Response_Result](images/Response.png?raw=true "Title")
-### Lambda Monitering  [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
+### Lambda Monitering   [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
 ![Moniter_Result](images/Moniter.png?raw=true "Title")
 
 ## To run 
-#### 1. login to IAM account [![Generic badge](https://img.shields.io/badge/Login--<COLOR>.svg)](https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2)
+#### 1. login to IAM account  [![Generic badge](https://img.shields.io/badge/Login--<COLOR>.svg)](https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2)
 #### 2. Create a virtual environment in Cloud9
 #### 3. Check python version
 
