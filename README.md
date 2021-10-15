@@ -1,18 +1,7 @@
 
-# Welcome to your CDK Python project!
+# Sprint1:Web Health Check!
 
-This is a blank project for Python development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-This project is set up like a standard Python project.  The initialization
-process also creates a virtualenv within this project, stored under the `.venv`
-directory.  To create the virtualenv it assumes that there is a `python3`
-(or `python` for Windows) executable in your path with access to the `venv`
-package. If for any reason the automatic creation of the virtualenv fails,
-you can create the virtualenv manually.
-
-To manually create a virtualenv on MacOS and Linux:
+This project implements a lambda function which runs periodically to check website latency and availability
 
 ```
 $ python3 -m venv .venv
