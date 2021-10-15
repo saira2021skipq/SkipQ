@@ -1,4 +1,4 @@
-# Web Health Monitering
+# Web Health Monitoring
 ### SkipQ Cohort 2021: Sprint One
 This project implements a periodic lambda function to check website status. Main focus of the project is to use aws cdk to create cloud infrastructure
 
@@ -15,17 +15,17 @@ As an extensible, open software development framework, the AWS CDK features inte
 
 ## Project Functional Requirements
 * Project must be implemented on Cloud 9
-* Project must be implmeneted in python
+* Project must be implemented in python
 * Cloud infrastructure must be created programmatically
-* Project must by imeplemented using Lambda function from awd_cdk
-* Lambda function must return stauts of url passed
-* Lambda function must run every 5 minute to moniter website
+* Project must be implemented using Lambda function from awd_cdk
+* Lambda function must return status of url passed
+* Lambda function must run every 5 minute to monitor website
 
 ## Project Non Functional Requirements
 * Comments must be add in the code
 * Code must be structured well
 * Modular approach should be used
-* Unnecessory global variables must not be used
+* Unnecessary global variables must not be used
 * Best practices must be followed 
 
 
