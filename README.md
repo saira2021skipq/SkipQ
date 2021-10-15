@@ -1,7 +1,9 @@
 
 # Sprint1:Web Health Check!
 
-This project implements a lambda function which runs periodically to check website latency and availability
+This project implements a lambda function which runs periodically to check website latency and availability.
+set up cdk 
+Set up virtual environment
 
 ```
 $ python3 -m venv .venv
@@ -12,12 +14,6 @@ step to activate your virtualenv.
 
 ```
 $ source .venv/bin/activate
-```
-
-If you are a Windows platform, you would activate the virtualenv like this:
-
-```
-% .venv\Scripts\activate.bat
 ```
 
 Once the virtualenv is activated, you can install the required dependencies.
@@ -35,6 +31,12 @@ $ cdk synth
 To add additional dependencies, for example other CDK libraries, just add
 them to your `setup.py` file and rerun the `pip install -r requirements.txt`
 command.
+
+Deploy changes 
+
+```
+$ cdk deploy
+```
 
 ## Useful commands
 
