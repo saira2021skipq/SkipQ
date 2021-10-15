@@ -21,7 +21,7 @@ This project implements a periodic lambda function to check website status. Main
 * Best practices must be followed 
 
 
-## Technologies
+## Technologies Used
 * python 
 * aws cloud9
 * aws_cdk 
