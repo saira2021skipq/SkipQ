@@ -1,40 +1,18 @@
+# Web Health Monitering
+### SkipQ Cohort 2021: Sprint One
+This project implements a periodic lambda function to check a website status
 
-# Sprint1:Web Health Check!
+## Project Functional Requirements
+* Project must be implemented in Cloud 9
+* Project must be implmeneted in python
+* Cloud infrastructure must be created programmatically
+* Project must by imeplemented using Lambda function from awd_cdk
+* Lambda function must return stauts of url passed
+* Lambda function must run every 5 minute to moniter website
 
-This project implements a lambda function which runs periodically to check website latency and availability.
-set up cdk 
-This site was built using [GitHub Pages](https://pages.github.com/)
-Set up virtual environment
-
-```
-$ python3 -m venv .venv
-```
-
-After the init process completes and the virtualenv is created, you can use the following
-step to activate your virtualenv.
-
-```
-$ source .venv/bin/activate
-```
-
-Once the virtualenv is activated, you can install the required dependencies.
-
-```
-$ pip install -r requirements.txt
-```
-
-At this point you can now synthesize the CloudFormation template for this code.
-
-```
-$ cdk synth
-```
-
-To add additional dependencies, for example other CDK libraries, just add
-them to your `setup.py` file and rerun the `pip install -r requirements.txt`
-command.
-
-Deploy changes 
-
-```
-$ cdk deploy
-```
+##Project Non Functional Requirements
+* Comments must be add in the code
+* Code must be structured well
+* Code must be divided among different Modules
+* Unnecessory global variables must not be used
+* Best practices must be followed 
