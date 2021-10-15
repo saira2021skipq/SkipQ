@@ -17,16 +17,20 @@ class InfraStack(cdk.Stack):
     def __init__(self, scope: cdk.Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
         
+        #create a construct:lambda 
         hello_lamnda=self.create_lambda("helloLambda","./lambda","handler.lambda_handler")
         
         web_lamnda=self.create_lambda("WebhealthLambda","./lambda","web_health_publisher.health_web")
         
-        
+        #Construct a schedule from an interval and a time unit.
         lambda_schedule=aws_events.Schedule.rate(core.Duration.minutes(5))
-        event_target=aws_events_targets.LambdaFunction(handler=web_lamnda)
         
+        #Use the LambdaFunction target to invoke a lambda function.
+        event_target=aws_events_targets.LambdaFunction(handler=web_lamnda)
+        #defines an EventBridge rule which monitors an event based on an event pattern(schedule) and invoke event_targets when the pattern is matched against a triggered event
         lambda_run_rule=aws_events.Rule(self,"web_health_schedule_rule",
         description="Periodic Web Health Check",
+        
         schedule=lambda_schedule,
         targets=[event_target]
         )
