@@ -1,5 +1,5 @@
 # Web Health Monitoring
-### SkipQ Cohort 2021: Sprint One
+### SkipQ Cohort 2021: Sprint One [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://www.skipq.org/)
 This project implements a periodic lambda function to check website status. Main focus of the project is to use aws cdk to create cloud infrastructure
 
 
