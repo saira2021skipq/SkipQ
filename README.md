@@ -15,7 +15,7 @@ The AWS CDK, an open source software development framework to define cloud infra
 
 As an extensible, open software development framework, the AWS CDK features integrated development environment (IDE) capabilities. As of publication, the AWS CDK supports TypeScript, JavaScript, Python, Java and C#/.Net. In this article, we'll compare the AWS CDK vs. CloudFormation, including their key features, the role of constructs in building application stacks and the benefits of using a common language for AWS-native infrastructure as code.
 
-## Project Functional Requirements
+## Project Functional Requirements [![Generic badge](https://img.shields.io/badge/<Implemented>-<Yes>-<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda)
 * Project must be implemented on Cloud 9
 * Project must be implemented in python
 * Cloud infrastructure must be created programmatically
