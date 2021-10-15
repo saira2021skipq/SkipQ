@@ -41,15 +41,21 @@ As an extensible, open software development framework, the AWS CDK features inte
 ### Lambda Monitering 
 ![Moniter_Result](images/Moniter.png?raw=true "Title")
 
-##To run 
-* login to IAM AWS account
-* Create an environment in Cloud9
-* Check python version
+## To run 
+1 login to IAM AWS account
+2 Create an environment in Cloud9
+3 Check python version
+
 `python --version`
+
 if it is not python 3
+
 `vim ~/.bashrc`
+
 add this line of in the end of bash file
+
 `alias python="/usr/bin/python3"`
-create a virtual environment 
+
+3 create a virtual environment 
 
 
