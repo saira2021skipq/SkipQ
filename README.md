@@ -43,8 +43,8 @@ As an extensible, open software development framework, the AWS CDK features inte
 
 ## To run 
 #### 1. login to IAM account
-#### 2. Create an environment in Cloud9
-3. Check python version
+#### 2. Create a virtual environment in Cloud9
+#### 3. Check python version
 
 `python --version`
 
@@ -56,6 +56,17 @@ add this line of in the end of bash file
 
 `alias python="/usr/bin/python3"`
 
-4. create a virtual environment 
+#### 4. Start a virtual environment
 
+`source .venv/bin/activate`
 
+#### 4. Install requirements
+
+`pip install -r requirements.txt`
+
+#### 4. Create Cloud Formation
+
+`cdk synth`
+#### 4. Deploy Cloud Formation
+
+`cdk deploy`
