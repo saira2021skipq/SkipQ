@@ -42,9 +42,9 @@ As an extensible, open software development framework, the AWS CDK features inte
 ![Moniter_Result](images/Moniter.png?raw=true "Title")
 
 ## To run 
-1 login to IAM AWS account
-2 Create an environment in Cloud9
-3 Check python version
+1. login to IAM account
+2. Create an environment in Cloud9
+3. Check python version
 
 `python --version`
 
@@ -56,6 +56,6 @@ add this line of in the end of bash file
 
 `alias python="/usr/bin/python3"`
 
-3 create a virtual environment 
+4. create a virtual environment 
 
 
