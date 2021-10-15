@@ -29,5 +29,6 @@ This project implements a periodic lambda function to check website status. Main
 
 ## End results
 ### Response
-![Alt text](images/Response.png?raw=true "Title")
+![Response_Result](images/Response.png?raw=true "Title")
 ### Lambda Monitering 
+![Moniter_Result](images/Moniter.png?raw=true "Title")
