@@ -43,10 +43,12 @@ As an extensible, open software development framework, the AWS CDK features inte
 * boto3
 
 ## End results
-### Response   [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
-![Response_Result](images/Response.png?raw=true "Title")
-### Lambda Monitering   [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
-![Moniter_Result](images/Moniter.png?raw=true "Title")
+### Cloud watch Metrics   [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
+![Metrics Result](images/metrics.png?raw=true "Title")
+### Alarms  [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
+![Alarm Result](images/alarm.png?raw=true "Title")
+### Email Notification  [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
+![Email Result](images/email.png?raw=true "Title")
 
 ## To run 
 #### 1. login to IAM account  [![Generic badge](https://img.shields.io/badge/Login--<COLOR>.svg)](https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2)
@@ -59,21 +61,24 @@ if it is not python 3
 
 `vim ~/.bashrc`
 
-add this line of in the end of bash file
+add this line in the end of bash file
 
 `alias python="/usr/bin/python3"`
+#### 4. Choose python language
 
-#### 4. Start a virtual environment
+`cdk init app -language python`
+
+#### 5. Start a virtual environment
 
 `source .venv/bin/activate`
 
-#### 4. Install requirements
+#### 6. Install requirements
 
 `pip install -r requirements.txt`
 
-#### 4. Create Cloud Formation
+#### 7. Create Cloud Formation
 
 `cdk synth`
-#### 4. Deploy Cloud Formation
+#### 8. Deploy Cloud Formation
 
 `cdk deploy`
