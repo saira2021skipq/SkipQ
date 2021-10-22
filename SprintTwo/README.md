@@ -43,11 +43,11 @@ As an extensible, open software development framework, the AWS CDK features inte
 * boto3
 
 ## End results
-### Cloud watch Metrics   [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
+### Cloud watch Metrics   [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/SkipQ/tree/master/SprintTwo/images)
 ![Metrics Result](images/metrics.png?raw=true "Title")
-### Alarms  [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
+### Alarms  [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/SkipQ/tree/master/SprintTwo/images)
 ![Alarm Result](images/alarm.png?raw=true "Title")
-### Email Notification  [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
+### Email Notification  [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/SkipQ/tree/master/SprintTwo/images)
 ![Email Result](images/email.png?raw=true "Title")
 
 ## To run 
