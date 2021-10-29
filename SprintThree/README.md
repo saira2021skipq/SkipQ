@@ -6,7 +6,7 @@ This project implements a lambda function to write data to dynamo db received fr
 
 ## Project Features 
 * A lambda function has been implemented to check website status every 5 minutes
-* Website status value are written to cloud watch metric
+* Website status values are written to cloud watch metric
 * Alarms has been set on cloudwatch metrices 
 * Everytime alarm changes its state a notifcation is sent to lambda function
 * lambda function store alarm message in dynamodb
