@@ -2,36 +2,14 @@
 # Web Health Monitoring
 ### SkipQ Cohort 2021: Sprint One 
 
-This project implements a periodic lambda function to check website status. Main focus of the project is to use aws cdk to create cloud infrastructure
+This project implements a lambda function to write data to dynamo db received from sns topic
 
-
-### Motivation
-Infrastructure as code has quickly become a go-to process to automatically provision and manage cloud resources. With increasing sophistication, engineers and DevOps teams are codifying infrastructure for greater application flexibility and functionality, with a single-source language across an organization.
-
-
-IT teams have two AWS-native options for infrastructure as code -- AWS CloudFormation and the AWS Cloud Development Kit (CDK). CloudFormation templates were AWS' first foray into cloud-based infrastructure as code, and while still useful, CloudFormation has clear weaknesses. More specifically, it doesn't offer built-in logic capabilities and has a steep learning curve.
-
-The AWS CDK, an open source software development framework to define cloud infrastructure, addresses these weaknesses. The AWS CDK supports popular programming languages, which developers can use to build, automate and manage infrastructure based on an imperative approach. Finally, developers can provision these commands through CloudFormation.
-
-As an extensible, open software development framework, the AWS CDK features integrated development environment (IDE) capabilities. As of publication, the AWS CDK supports TypeScript, JavaScript, Python, Java and C#/.Net. In this article, we'll compare the AWS CDK vs. CloudFormation, including their key features, the role of constructs in building application stacks and the benefits of using a common language for AWS-native infrastructure as code.
-
-## Project Functional Requirements [![Generic badge](https://img.shields.io/badge/Implemented-Yes-<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda)
-* Project must be implemented on Cloud 9
-* Project must be implemented in python
-* Cloud infrastructure must be created programmatically
-* Project must be implemented using Lambda function from awd_cdk
-* Lambda function must return status of url passed
-* Lambda function must run every 5 minute to monitor website
-* Create metrics on cloud watch for each latancy and availability data point for each url
-* Set and alram on cloudwatch metrics
-* Enable sns email notification service on Alarms
-
-## Project Non Functional Requirements [![Generic badge](https://img.shields.io/badge/Implemented-Yes-<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda)
-* Comments must be add in the code
-* Code must be structured well
-* Modular approach should be used
-* Unnecessary global variables must not be used
-* Best practices must be followed 
+## Project Features 
+* A lambda function has been implemented to check website status every 5 minutes
+* Website status value are written to cloud watch metric
+* Alarms has been set on cloudwatch metrices 
+* Everytime alarm changes its state a notifcation is sent to lambda function
+* lambda function store alarm message in dynamodb
 
 
 ## Technologies Used
@@ -41,13 +19,8 @@ As an extensible, open software development framework, the AWS CDK features inte
 * aws lambda
 * aws Cloudwatch
 * boto3
-
-## End results
-### Response   [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
-![Response_Result](images/Response.png?raw=true "Title")
-### Lambda Monitering   [![Generic badge](https://img.shields.io/badge/image--<COLOR>.svg)](https://github.com/saira2021skipq/hello_lambda/tree/master/images)
-![Moniter_Result](images/Moniter.png?raw=true "Title")
-
+* dynamodb
+* 
 ## To run 
 #### 1. login to IAM account  [![Generic badge](https://img.shields.io/badge/Login--<COLOR>.svg)](https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2)
 #### 2. Create a virtual environment in Cloud9
