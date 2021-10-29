@@ -1,6 +1,6 @@
 ### SkipQ [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://www.skipq.org/)
 # Web Health Monitoring
-### SkipQ Cohort 2021: Sprint One 
+### SkipQ Cohort 2021: Sprint Three 
 
 This project implements a lambda function to write data to dynamo db received from sns topic
 
