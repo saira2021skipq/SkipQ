@@ -8,7 +8,7 @@ Table of Contents
 
    * [Databricks Labs CI/CD Templates](#databricks-labs-cicd-templates)
       * [Table of Contents](#table-of-contents)
-      * [Sample project structure (with GitHub Actions)](#sample-project-structure-with-github-actions)
+      * [Sample project structure (with GitHub Actions)](#Project-Structure-default-aws-cdk-Tempelate))
       * [Project Structure (default aws cdk Tempelate)](#sample-project-structure-with-azure-devops)
       * [Note on dbx](#note-on-dbx)
       * [Quickstart](#quickstart)
