@@ -6,14 +6,13 @@ This repository provides a template for automated Databricks CI/CD pipeline crea
 Table of Contents
 =================
 
-   * [Databricks Labs CI/CD Templates](#databricks-labs-cicd-templates)
+   
       * [Table of Contents](#table-of-contents)
-      * [Sample project structure (with GitHub Actions)](#Project-Structure-default-aws-cdk-Tempelate))
-      * [Project Structure (default aws cdk Tempelate)](#sample-project-structure-with-azure-devops)
-      * [Note on dbx](#note-on-dbx)
+      * [Project Structure (default aws cdk Tempelate)](#Project-Structure-default-aws-cdk-Tempelate))
+      * [Note on CI/CD on aws](#Note-on-CI/CD-on-aws)
       * [Quickstart](#quickstart)
-         * [Local steps](#local-steps)
-         * [Setting up CI/CD pipeline on GitHub Actions](#setting-up-cicd-pipeline-on-github-actions)
+      * [Local steps](#local-steps)
+         * [Creating a token](#Creating-a-token)
          * [Setting up CI/CD pipeline on Azure DevOps](#setting-up-cicd-pipeline-on-azure-devops)
          * [Setting up CI/CD pipeline on Gitlab](#setting-up-cicd-pipeline-on-gitlab)
       * [Deployment file structure](#deployment-file-structure)
@@ -77,8 +76,8 @@ As a prerequisite, you need to install [python](https://www.python.org) on cloud
 In these instructions we're based on aws services 
 If you don't need to use cloud9, we still recommend to use cloud9 because it has linux setup created.
 
-### Local steps
-#### Creating a token
+## Local steps
+### Creating a token
 
 * [Verify your email address](https://docs.github.com/en/get-started/signing-up-for-github/verifying-your-email-address), if it hasn't been verified yet.
 * In the upper-right corner of any page, click your profile photo, then click Settings.
