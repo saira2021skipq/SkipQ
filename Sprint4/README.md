@@ -80,8 +80,9 @@ If you don't need to use cloud9, we still recommend to use cloud9 because it has
 * [Verify your email address](https://docs.github.com/en/get-started/signing-up-for-github/verifying-your-email-address), if it hasn't been verified yet.
 
 * In the upper-right corner of any page, click your profile photo, then click Settings.
-* ![Metrics Result](images/metrics.png?raw=true "Title")
+* ![userbar-account-settings.png](images/userbar-account-settings.png?raw=true "Title")
 * In the left sidebar, click Developer settings.
+* ![developer-settings.png](images/developer-settings.png?raw=true "Title")
 * In the left sidebar, click Personal access tokens.
 * Click Generate new token.
 * Give your token a descriptive name.
