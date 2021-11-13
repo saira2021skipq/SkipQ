@@ -108,7 +108,32 @@ If you don't need to use cloud9, we still recommend to use cloud9 because it has
 * Click Generate token.
 
    ![developer-settings.png](images/generate_token.png?raw=true "Title")
+  
+### Add Github credentials to AWS Secrets Manager
+You will now see your new token so please copy and paste that token to a notepad or anywhere that you can reference it for the next step.
 
+We will be using AWS Secrets Manager to store our GitHub access token so that our CodeBuild project will be able to reference our credentials and have the ability to use our GitHub repository as its source.
+
+```
+aws secretsmanager create-secret --name github-oauth-token
+          --description "Secret for GitHub" --secret-string "insert your GitHub OAuth token"
+          
+```
+
+You should see a similar output if the command was able to successfully run.
+```
+{
+    "ARN": "arn:aws:secretsmanager:us-west-2:123456789012㊙️tutorials/MyFirstSecret-rzM8Ja",
+    "Name": "github-oauth-token",
+    "VersionId": "35e07aa2-684d-42fd-b076-3b3f6a19c6dc"
+}
+```
+If you browse to the AWS Secrets Manager console, you should see two secrets now:
+
+* Secret that holds our credentials for Docker Hub
+* Secret that holds our credentials for Github
+
+![developer-settings.png](images/secrets-manager.png?raw=true "Title")
 Perform the following actions in your development environment:
 - Activate the python Environment
 ```
