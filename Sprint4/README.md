@@ -81,19 +81,32 @@ If you don't need to use cloud9, we still recommend to use cloud9 because it has
 
 * In the upper-right corner of any page, click your profile photo, then click Settings.
   ![userbar-account-settings.png](images/userbar-account-settings.png?raw=true "Title")
+  
 * In the left sidebar, click Developer settings.
+
   ![developer-settings.png](images/developer-settings.png?raw=true "Title")
+  
 * In the left sidebar, click Personal access tokens.
+
   ![developer-settings.png](images/personal_access_tokens_tab.png?raw=true "Title")
+  
 * Click Generate new token.
+
   ![developer-settings.png](images/generate_new_token.png?raw=true "Title")
 * Give your token a descriptive name.
+
   ![developer-settings.png](images/token_description.png?raw=true "Title")
+  
 * To give your token an expiration, select the Expiration drop-down menu, then click a default or use the calendar picker
+
    ![developer-settings.png](images/token_expiration.png?raw=true "Title")
+   
 * Select the scopes, or permissions, you'd like to grant this token. To use your token to access repositories from the command line, select repo.
+
    ![developer-settings.png](images/token_scopes.gif?raw=true "Title")
+   
 * Click Generate token.
+
    ![developer-settings.png](images/generate_token.png?raw=true "Title")
 
 Perform the following actions in your development environment:
