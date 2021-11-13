@@ -54,10 +54,10 @@ Table of Contents
 ```
 
 Some explanations regarding structure:
-- `lambda_b` folder is a resource folder where constants file and function logics are implemented.
-- `sprint4`  folder contains all stacks and stages for pipeline
-- `unittests` - directory with your package tests
-- `cdk.json` - deployment configuration file. Please read the [following section](#deployment-file-structure) for a full reference.
+- `lambda_b` folder is a resource folder where constants and functions are implemented.
+- `sprint4`  folder contains stacks and stages for pipeline.
+- `unittests` - is a package with tests.
+- `cdk.json` - deployment configuration file.
 
 
 
@@ -78,7 +78,9 @@ If you don't need to use cloud9, we still recommend to use cloud9 because it has
 ### Creating a token
 
 * [Verify your email address](https://docs.github.com/en/get-started/signing-up-for-github/verifying-your-email-address), if it hasn't been verified yet.
+
 * In the upper-right corner of any page, click your profile photo, then click Settings.
+* ![Metrics Result](images/metrics.png?raw=true "Title")
 * In the left sidebar, click Developer settings.
 * In the left sidebar, click Personal access tokens.
 * Click Generate new token.
