@@ -11,9 +11,9 @@ Table of Contents
    * [Quickstart](#quickstart)
    * [Local steps](#local-steps)
       * [Creating a token](#Creating-a-token)
-         * [Setting up CI/CD pipeline on Azure DevOps](#setting-up-cicd-pipeline-on-azure-devops)
-         * [Setting up CI/CD pipeline on Gitlab](#setting-up-cicd-pipeline-on-gitlab)
-      * [Deployment file structure](#deployment-file-structure)
+      * [Add Github credentials to AWS Secrets Manager](#Add-Github-credentials-to-AWS-Secrets-Manager)
+      * [AWS Roles](#AWS-Roles)
+      * [Importnat changes to code](#Importnat-changes-to-code)
       * [Different deployment types](#different-deployment-types)
          * [Deployment for Run Submit API](#deployment-for-run-submit-api)
          * [Deployment for Run Now API](#deployment-for-run-now-api)
@@ -135,8 +135,24 @@ If you browse to the AWS Secrets Manager console, you should see two secrets now
 
 ![developer-settings.png](images/secrets-manager.png?raw=true "Title")
 Perform the following actions in your development environment:
+
+### AWS Roles
+Make sure you have access to following aws roles
+* AWSLambda_FullAccess
+* CloudWatchFullAccess
+* AmazonDynamoDBFullAccess
+* AmazonSNSFullAccess
+
+### Importnat changes to code
+* - `/sprint4/sprint4_stack` replace this feild according to your github key stored in aws secret manager
+```
+output=source_artifact,
+        oauth_token=core.SecretValue.secrets_manager('saira_pipeline_token', json_field='saira_pipeline_token'),
+        owner='saira2021skipq', 
+```
 - Activate the python Environment
 ```
+
 Source .venv/bin/activate
 
 ```
