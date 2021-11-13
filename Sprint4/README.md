@@ -79,18 +79,17 @@ If you don't need to cloud9, we still recommend to use cloud9 because it has lin
 
 ### Local steps
 #### Creating a token
-```
-1 [Verify your email address](https://docs.github.com/en/get-started/signing-up-for-github/verifying-your-email-address), if it hasn't been verified yet.
-2 In the upper-right corner of any page, click your profile photo, then click Settings.
-3 In the left sidebar, click Developer settings.
-4 In the left sidebar, click Personal access tokens.
-5 Click Generate new token.
-6 Give your token a descriptive name.
-7 To give your token an expiration, select the Expiration drop-down menu, then click a default or use the calendar picker
-8 Select the scopes, or permissions, you'd like to grant this token. To use your token to access repositories from the command line, select repo.
-9 Click Generate token.
 
-```
+* [Verify your email address](https://docs.github.com/en/get-started/signing-up-for-github/verifying-your-email-address), if it hasn't been verified yet.
+* In the upper-right corner of any page, click your profile photo, then click Settings.
+* In the left sidebar, click Developer settings.
+* In the left sidebar, click Personal access tokens.
+* Click Generate new token.
+* Give your token a descriptive name.
+* To give your token an expiration, select the Expiration drop-down menu, then click a default or use the calendar picker
+* Select the scopes, or permissions, you'd like to grant this token. To use your token to access repositories from the command line, select repo.
+* Click Generate token.
+
 Perform the following actions in your development environment:
 - Activate the python Environment
 ```
