@@ -5,14 +5,12 @@ This repository provides a template for automated Databricks CI/CD pipeline crea
 
 Table of Contents
 =================
-
-   
-      * [Table of Contents](#table-of-contents)
-      * [Project Structure (default aws cdk Tempelate)](#Project-Structure-default-aws-cdk-Tempelate))
-      * [Note on CI/CD on aws](#Note-on-CI/CD-on-aws)
-      * [Quickstart](#quickstart)
-      * [Local steps](#local-steps)
-         * [Creating a token](#Creating-a-token)
+   * [Table of Contents](#table-of-contents)
+   * [Project Structure (default aws cdk Tempelate)](#Project-Structure-default-aws-cdk-Tempelate))
+   * [Note on CI/CD on aws](#Note-on-CI/CD-on-aws)
+   * [Quickstart](#quickstart)
+   * [Local steps](#local-steps)
+      * [Creating a token](#Creating-a-token)
          * [Setting up CI/CD pipeline on Azure DevOps](#setting-up-cicd-pipeline-on-azure-devops)
          * [Setting up CI/CD pipeline on Gitlab](#setting-up-cicd-pipeline-on-gitlab)
       * [Deployment file structure](#deployment-file-structure)
