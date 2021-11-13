@@ -73,7 +73,7 @@ Some explanations regarding structure:
 ## Quickstart
 
 > **_NOTE:_**  
-As a prerequisite, you need to install [python](https://www.python.org) on cloud9[Login](https://us-east-2.console.aws.amazon.com/cloud9/home?region=us-east-2).
+As a prerequisite, you need to install [python](https://www.python.org) on cloud9 ([Login](https://us-east-2.console.aws.amazon.com/cloud9/home?region=us-east-2)).
 In this instruction we're based on aws services 
 If you don't need to cloud9, we still recommend to use cloud9 because it has linux setup created.
 
