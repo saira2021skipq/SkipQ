@@ -15,6 +15,7 @@ Table of Contents
       * [AWS Roles](#AWS-Roles)
       * [Importnat changes to code](#Importnat-changes-to-code)
    * [Deployment](#Deployment)
+      * [Creating a token](#Creating-a-token)
       * [Activate Virtual Environment](#Activate Virtual Environment)
       * [Install requirements:](#Install-requirements:)
       * [bootstrap the environment with qualifer and toolkit name:](#bootstrap-the-environment-with-qualifer-and-toolkit name:)
