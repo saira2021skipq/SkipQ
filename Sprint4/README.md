@@ -143,13 +143,14 @@ Make sure you have access to following aws roles
 * AmazonDynamoDBFullAccess
 * AmazonSNSFullAccess
 
-### Importnat changes to code
+### Importnat changes in code
 * - `/sprint4/sprint4_stack` replace this feild according to your github key stored in aws secret manager
 ```
 output=source_artifact,
         oauth_token=core.SecretValue.secrets_manager('saira_pipeline_token', json_field='saira_pipeline_token'),
         owner='saira2021skipq', 
 ```
+### Deployment
 - Activate the python Environment
 ```
 
@@ -178,29 +179,11 @@ dbx launch --job <your-job-name> --trace
 ### Setting up CI/CD pipeline on GitHub Actions
 
 - Create a new repository on GitHub
-- Configure `DATABRICKS_HOST` and `DATABRICKS_TOKEN` secrets for your project in [GitHub UI](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets)
+- Autherize "AWS Connector for GitHub" on your github account
 - Add a remote origin to the local repo
 - Push the code 
-- Open the GitHub Actions for your project to verify the state of the deployment pipeline
 
-### Setting up CI/CD pipeline on Azure DevOps
 
-- Create a new repository on GitHub
-- Connect the repository to Azure DevOps
-- Configure `DATABRICKS_HOST` and `DATABRICKS_TOKEN` secrets for your project in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/azure-key-vault?view=azure-devops). Note that secret variables must be mapped to env as mentioned [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables) using the syntax `env:` for example:
-```
-variables:
-- group: Databricks-environment
-stages:
-...
-...
-    - script: |
-        dbx deploy
-      env:
-        DATABRICKS_TOKEN: $(DATABRICKS_TOKEN)
-```
-- Add a remote origin to the local repo
-- Push the code 
 - Open the Azure DevOps UI to check the deployment status 
 
 ### Setting up CI/CD pipeline on Gitlab
