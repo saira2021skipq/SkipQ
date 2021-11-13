@@ -14,7 +14,6 @@ Table of Contents
       * [Add Github credentials to AWS Secrets Manager](#Add-Github-credentials-to-AWS-Secrets-Manager)
       * [AWS Roles](#AWS-Roles)
       * [Importnat changes to code](#Importnat-changes-to-code)
-      * [Different deployment types](#different-deployment-types)
    * [Deployment](#Deployment)
          * [Activate Virtual Environment](#Activate Virtual Environment)
          * [Install requirements:](#Install-requirements:)
@@ -151,6 +150,7 @@ output=source_artifact,
         owner='saira2021skipq', 
 ```
 ## Deployment
+
 ### Activate the python Environment
 ```
 Source .venv/bin/activate
