@@ -29,9 +29,9 @@ Table of Contents
 * When an alarm is triggered a notification with alarm details as payload is sent to another lambda function and email of the subscribed user.
 * Lambda stores the notification payload in the database.
 * Project is implemented inside CI/CD pipeline set on github repo.
-* CI/CD pipeline consists of three stages with automatic testing in Beta stage and manual approval in Gamma stage
-* Project is Deployed in production stage of pipeline
-* Whenever a change is pushed to github repo the project will be automatically deployed passing through all the stages
+* CI/CD pipeline consists of three stages with automatic testing in Beta stage and manual approval in Gamma stage.
+* Project is Deployed in production stage of pipeline.
+* Whenever a change is pushed to github repo the project will be automatically deployed passing through all the stages.
 ## Project Structure (default aws cdk Template)
 ```
 .
