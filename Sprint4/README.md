@@ -16,7 +16,7 @@ Table of Contents
    * [Deployment](#Deployment)
       * [Activate Virtual Environment](#Activate-Virtual-Environment)
       * [Install requirements](#Install-requirements)
-      * [Bootstrap the environment with qualifer and toolkit name](#Bootstrap-the-environment-with-qualifer-and-toolkit name)
+      * [Bootstrap the environment with qualifer and toolkit name](#Bootstrap-the-environment-with-qualifer-and-toolkit-name)
       * [Make your first deployment](#Make-your-first-deployment)
    * [Feedback](#feedback)
    * [Contributing](#contributing)
