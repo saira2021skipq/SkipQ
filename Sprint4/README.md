@@ -1,33 +1,38 @@
-
 # CI/CD Pipeline using aws cdk
 
 Table of Contents
 =================
    * [Table of Contents](#table-of-contents)
    * [Features](#Features)
-   * [Project Structure (default aws cdk Tempelate)](#Project-Structure-default-aws-cdk-Tempelate))
+   * [Project Structure (default aws cdk Template)](#Project-Structure-default-aws-cdk-Template))
    * [Note on CI/CD on aws](#Note-on-CI/CD-on-aws)
    * [Quickstart](#quickstart)
    * [Local steps](#local-steps)
       * [Creating a token](#Creating-a-token)
       * [Add Github credentials to AWS Secrets Manager](#Add-Github-credentials-to-AWS-Secrets-Manager)
       * [AWS Roles](#AWS-Roles)
-      * [Importnat changes to code](#Importnat-changes-to-code)
+      * [Important changes to code](#Important-changes-to-code)
+      * [Setting up CI/CD pipeline on GitHub](#Setting-up-CI/CD-pipeline-on-GitHub)
    * [Deployment](#Deployment)
       * [Activate Virtual Environment](#Activate-Virtual-Environment)
       * [Install requirements](#Install-requirements)
-      * [Bootstrap the environment with qualifer and toolkit name](#Bootstrap-the-environment-with-qualifer-and-toolkit-name)
+      * [Bootstrap the environment with qualifier and toolkit name](#Bootstrap-the-environment-with-qualifier-and-toolkit-name)
       * [Make your first deployment](#Make-your-first-deployment)
    * [Feedback](#feedback)
    * [Contributing](#contributing)
    * [Kudos](#kudos)
 ## Features
-
-## Project Structure (default aws cdk Tempelate)
+* The project implements CI/CD pipeline on aws.
+* A lambda function has been implemented which is scheduled to trigger every 5 seconds to check the status of URLs passed.
+* Lambda function sends status results to CloudWatch matrices.
+* Alarms have been set on Cloudwatch matrices.
+* When an alarm is triggered a notification with alarm details as payload is sent to another lambda function and email of the subscribed user.
+* Lambda stores the notification payload in the database.
+## Project Structure (default aws cdk Template)
 ```
 .
 ├── lambda_b
-│   └── __init__.py
+│   └── __init__.py
 |   └── alarm_defination.py
 |   └── cloudWatch_defination.py
 |   └── constants.py
@@ -36,7 +41,7 @@ Table of Contents
 |   └── lambda_database.py
 |   └── web_health_publisher.py
 ├── sprint4
-│   └── ProductionStage.py
+│   └── ProductionStage.py
 |   └── __init__.py
 |   └── beta_stage.py
 |   └── hello_lambda_stack.py
@@ -44,8 +49,8 @@ Table of Contents
 ├── .gitignore
 ├── README.md
 ├── unittests
-│   ├── __init__.py
-│   └── test_lambda_stack.py
+│   ├── __init__.py
+│   └── test_lambda_stack.py
 ├── setup.py
 ├── cdk.json
 ├── requirements.txt
@@ -54,7 +59,7 @@ Table of Contents
 
 Some explanations regarding structure:
 - `lambda_b` folder is a resource folder where constants and functions are implemented.
-- `sprint4`  folder contains stacks and stages for pipeline.
+- `sprint4`  folder contains stacks and stages for the pipeline.
 - `unittests` - is a package with tests.
 - `cdk.json` - deployment configuration file.
 
@@ -71,7 +76,7 @@ Some explanations regarding structure:
 > **_NOTE:_**  
 As a prerequisite, you need to install [python](https://www.python.org) on cloud9 ([Login](https://us-east-2.console.aws.amazon.com/cloud9/home?region=us-east-2)).
 In these instructions we're based on aws services 
-If you don't need to use cloud9, we still recommend to use cloud9 because it has linux setup created.
+If you don't need to use cloud9, we still recommend using cloud9 because it has a linux setup created.
 
 ## Local steps
 ### Creating a token
@@ -133,7 +138,6 @@ If you browse to the AWS Secrets Manager console, you should see two secrets now
 * Secret that holds our credentials for Github
 
 ![developer-settings.png](images/secrets-manager.png?raw=true "Title")
-Perform the following actions in your development environment:
 
 ### AWS Roles
 Make sure you have access to following aws roles
@@ -142,13 +146,27 @@ Make sure you have access to following aws roles
 * AmazonDynamoDBFullAccess
 * AmazonSNSFullAccess
 
-### Importnat changes in code
-* - `/sprint4/sprint4_stack` replace this feild according to your github key stored in aws secret manager
+### Important changes in code
+* - `/sprint4/sprint4_stack` replace this field according to your github key stored in aws secret manager
 ```
 output=source_artifact,
         oauth_token=core.SecretValue.secrets_manager('saira_pipeline_token', json_field='saira_pipeline_token'),
         owner='saira2021skipq', 
 ```
+### Setting up CI/CD pipeline on GitHub
+
+- Create a new repository on Gitlab
+- Add a remote origin to the local repo
+ ```
+ git remote add origin <repo url>
+ git add -A
+ git commit -m "Remote Origin"
+ ```
+- Push the code 
+```
+git push
+```
+
 ## Deployment
 
 ### Activate Virtual Environment
@@ -159,7 +177,7 @@ Source .venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
-### Bootstrap the environment with qualifer and toolkit name
+### Bootstrap the environment with qualifier and toolkit name
 ```
 $ cdk bootstrap --qualifier <QualifierName> --toolkit-stack-name <ToolKitName>
 ```
