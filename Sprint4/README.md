@@ -1,11 +1,10 @@
 
-# Databricks Labs CI/CD Templates
-
-This repository provides a template for automated Databricks CI/CD pipeline creation and deployment.
+# CI/CD Pipeline using aws cdk
 
 Table of Contents
 =================
    * [Table of Contents](#table-of-contents)
+   * [Features](#Features)
    * [Project Structure (default aws cdk Tempelate)](#Project-Structure-default-aws-cdk-Tempelate))
    * [Note on CI/CD on aws](#Note-on-CI/CD-on-aws)
    * [Quickstart](#quickstart)
@@ -22,7 +21,8 @@ Table of Contents
    * [Feedback](#feedback)
    * [Contributing](#contributing)
    * [Kudos](#kudos)
-    
+## Features
+
 ## Project Structure (default aws cdk Tempelate)
 ```
 .
