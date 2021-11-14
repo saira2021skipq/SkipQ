@@ -151,7 +151,7 @@ output=source_artifact,
 ```
 ## Deployment
 
-### Activate the python Environment
+### Activate Virtual Environment
 ```
 Source .venv/bin/activate
 ```
