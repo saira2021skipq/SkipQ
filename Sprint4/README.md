@@ -15,9 +15,9 @@ Table of Contents
       * [Importnat changes to code](#Importnat-changes-to-code)
    * [Deployment](#Deployment)
       * [Activate Virtual Environment](#Activate-Virtual-Environment)
-      * [Install requirements:](#Install-requirements:)
-      * [bootstrap the environment with qualifer and toolkit name:](#bootstrap-the-environment-with-qualifer-and-toolkit name:)
-      * [AMake your first deployment:]((##Make-your-first-deployment:)
+      * [Install requirements](#Install-requirements)
+      * [bootstrap the environment with qualifer and toolkit name](#bootstrap-the-environment-with-qualifer-and-toolkit name)
+      * [AMake your first deployment](#Make-your-first-deployment)
    * [Feedback](#feedback)
    * [Contributing](#contributing)
    * [Kudos](#kudos)
@@ -155,15 +155,15 @@ output=source_artifact,
 ```
 Source .venv/bin/activate
 ```
-### Install requirements:
+### Install requirements
 ```
 pip install -r requirements.txt
 ```
-### bootstrap the environment with qualifer and toolkit name:
+### bootstrap the environment with qualifer and toolkit name
 ```
 $ cdk bootstrap --qualifier <QualifierName> --toolkit-stack-name <ToolKitName>
 ```
-### Make your first deployment:
+### Make your first deployment
 ```
 cdk deploy
 ```
